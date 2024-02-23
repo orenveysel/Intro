@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Intro.DataAccess.Concretes;
 
-public class CourseDal:ICourseDal
+public class DapperCourseDal : ICourseDal
 {
     List<Course> courses;
-    public CourseDal()
+    public DapperCourseDal()
     {
         Course course1 = new Course();
         course1.Id = 1;
-        course1.Name = "C#";
+        course1.Name = "Rust";
         course1.Description = ".NET 8 vs...";
         course1.Price = 0;
 
